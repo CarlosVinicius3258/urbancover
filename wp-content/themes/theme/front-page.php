@@ -10,7 +10,7 @@
                 <div class="flex flex-2">
                     <div class="col col1">
                         <div class="image round fit">
-                            <a href="generic.html" class="link"><img src="images/pic01.jpg" alt="" /></a>
+                            <a href="generic.php" class="link"><img src="<?php bloginfo('template_directory');?>/images/pic01.jpg" alt="" /></a>
                         </div>
                     </div>
                     <div class="col col2">
@@ -35,7 +35,7 @@
                 </div>
                 <div class="col col1 first">
                     <div class="image round fit">
-                        <a href="generic.html" class="link"><img src="images/pic02.jpg" alt="" /></a>
+                        <a href="generic.php" class="link"><img src="<?php bloginfo('template_directory');?>/images/pic02.jpg" alt="" /></a>
                     </div>
                 </div>
             </div>
@@ -52,21 +52,21 @@
             <div class="flex flex-3">
                 <div class="col align-center">
                     <div class="image round fit">
-                        <img src="images/pic03.jpg" alt="" />
+                        <img src="<?php bloginfo('template_directory');?>/images/pic03.jpg" alt="" />
                     </div>
                     <p>Sed congue elit malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis sollicitudin aliquet. </p>
                     <a href="#" class="button">Learn More</a>
                 </div>
                 <div class="col align-center">
                     <div class="image round fit">
-                        <img src="images/pic05.jpg" alt="" />
+                        <img src="<?php bloginfo('template_directory');?>/images/pic05.jpg" alt="" />
                     </div>
                     <p>Sed congue elit malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis sollicitudin aliquet. </p>
                     <a href="#" class="button">Learn More</a>
                 </div>
                 <div class="col align-center">
                     <div class="image round fit">
-                        <img src="images/pic04.jpg" alt="" />
+                        <img src="<?php bloginfo('template_directory');?>/images/pic04.jpg" alt="" />
                     </div>
                     <p>Sed congue elit malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis sollicitudin aliquet. </p>
                     <a href="#" class="button">Learn More</a>
