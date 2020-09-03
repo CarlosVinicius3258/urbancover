@@ -4,20 +4,21 @@
 <div id="main">
 
 <!-- Section -->
+<?php $section1 = get_field('section1');?>
+
     <section class="wrapper style1">
         <div class="inner">
             <!-- 2 Columns -->
                 <div class="flex flex-2">
                     <div class="col col1">
                         <div class="image round fit">
-                            <a href="generic.php" class="link"><img src="<?php bloginfo('template_directory');?>/images/pic01.jpg" alt="" /></a>
+                            <a href="<?php echo $section1['image_link'];?>" class="link"><img src="<?php echo $section1['image'];?>" alt="" /></a>
                         </div>
                     </div>
                     <div class="col col2">
-                        <h3>Maecenas a gravida quam</h3>
-                        <p>Etiam posuere hendrerit arcu, ac blandit nulla. Sed congue malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis sollicitudin aliquet, enim magna cursus auctor lacinia nunc ex blandit augue. Ut vitae neque fermentum, luctus elit fermentum, porta augue. Nullam ultricies, turpis at fermentum iaculis, nunc justo dictum dui, non aliquet erat nibh non ex.</p>
-                        <p>Sed congue malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis sollicitudin aliquet, enim magna cursus auctor lacinia nunc ex blandit augue. Ut vitae neque fermentum, luctus elit fermentum, porta augue. Nullam ultricies, turpis at fermentum iaculis, nunc justo dictum dui, non aliquet erat nibh non ex. </p>
-                        <a href="#" class="button">Learn More</a>
+                        <h3><?php echo $section1['title'];?></h3>
+                        <p><?php echo $section1['text'];?></p>
+                        <a href="<?php echo $section1['button_link'];?>" class="button"><?php echo $section1['button_text'];?></a>
                     </div>
                 </div>
         </div>
