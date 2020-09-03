@@ -29,12 +29,14 @@
 			</nav>
 
 		<!-- Banner -->
+		<?php $banner = get_field('banner');?>
+		
 			<section id="banner">
 				<div class="inner">
 					<header>
-						<h1>This is Urban</h1>
-						<p>Aliquam libero augue varius non odio nec faucibus congue<br />felis quisque a diam rutrum tempus massa accumsan faucibus purus.</p>
+						<h1><?php echo $banner['title'];?></h1>
+						<p><?php echo $banner['subtitle'];?></p>
 					</header>
-					<a href="#main" class="button big scrolly">Learn More</a>
+					<a href="<?php echo $banner['button_link'];?>" class="button big scrolly"><?php echo $banner['button_text'];?></a>
 				</div>
 			</section>
