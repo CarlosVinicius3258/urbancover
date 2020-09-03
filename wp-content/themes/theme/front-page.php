@@ -44,33 +44,36 @@
     </section>
 
 <!-- Section -->
+
+<?php $section3 = get_field('section3');?>
+
     <section class="wrapper style1">
         <div class="inner">
             <header class="align-center">
-                <h2>Aliquam ipsum purus dolor</h2>
-                <p>Cras sagittis turpis sit amet est tempus, sit amet consectetur purus tincidunt.</p>
+                <h2><?php echo $section3['title'];?></h2>
+                <p><?php echo $section3['subtitle']?></p>
             </header>
             <div class="flex flex-3">
                 <div class="col align-center">
                     <div class="image round fit">
-                        <img src="<?php bloginfo('template_directory');?>/images/pic03.jpg" alt="" />
+                        <img src="<?php echo $section3['area1']['image'];?>" alt="" />
                     </div>
-                    <p>Sed congue elit malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis sollicitudin aliquet. </p>
-                    <a href="#" class="button">Learn More</a>
+                    <p><?php echo $section3['area1']['subtitle'];?> </p>
+                    <a href="<?php echo $section3['area1']['button_link'];?>" class="button"><?php echo $section3['area1']['button_text'];?></a>
                 </div>
                 <div class="col align-center">
                     <div class="image round fit">
-                        <img src="<?php bloginfo('template_directory');?>/images/pic05.jpg" alt="" />
+                        <img src="<?php echo $section3['area2']['image'];?>" alt="" />
                     </div>
-                    <p>Sed congue elit malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis sollicitudin aliquet. </p>
-                    <a href="#" class="button">Learn More</a>
+                    <p><?php echo $section3['area2']['subtitle'];?></p>
+                    <a href="<?php echo $section3['area2']['button_link'];?>" class="button"><?php echo $section3['area2']['button_text'];?></a>
                 </div>
                 <div class="col align-center">
                     <div class="image round fit">
-                        <img src="<?php bloginfo('template_directory');?>/images/pic04.jpg" alt="" />
+                        <img src="<?php echo $section3['area3']['image'];?>" alt="" />
                     </div>
-                    <p>Sed congue elit malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis sollicitudin aliquet. </p>
-                    <a href="#" class="button">Learn More</a>
+                    <p><?php echo $section3['area3']['subtitle'];?></p>
+                    <a href="<?php echo $section3['area3']['button_link'];?>" class="button"><?php echo $section3['area3']['button_text'];?></a>
                 </div>
             </div>
         </div>
