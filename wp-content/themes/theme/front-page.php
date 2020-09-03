@@ -25,18 +25,18 @@
     </section>
 
 <!-- Section -->
+<?php $section2 = get_field('section2');?>
     <section class="wrapper style2">
         <div class="inner">
             <div class="flex flex-2">
                 <div class="col col2">
-                    <h3>Suspendisse quis massa vel justo</h3>
-                    <p>Etiam posuere hendrerit arcu, ac blandit nulla. Sed congue malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis sollicitudin aliquet, enim magna cursus auctor lacinia nunc ex blandit augue. Ut vitae neque fermentum, luctus elit fermentum, porta augue. Nullam ultricies, turpis at fermentum iaculis, nunc justo dictum dui, non aliquet erat nibh non ex.</p>
-                    <p>Sed congue malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis sollicitudin aliquet, enim magna cursus auctor lacinia nunc ex blandit augue. Ut vitae neque fermentum, luctus elit fermentum, porta augue. Nullam ultricies, turpis at fermentum iaculis, nunc justo dictum dui, non aliquet erat nibh non ex. </p>
-                    <a href="#" class="button">Learn More</a>
+                    <h3><?php echo $section2['title'];?></h3>
+                    <p><?php echo $section2['text'];?></p>
+                    <a href="<?php echo $section2['button_link'];?>" class="button"><?php echo $section2['button_text'];?></a>
                 </div>
                 <div class="col col1 first">
                     <div class="image round fit">
-                        <a href="generic.php" class="link"><img src="<?php bloginfo('template_directory');?>/images/pic02.jpg" alt="" /></a>
+                        <a href="<?php echo $section2['image_link'];?>" class="link"><img src="<?php echo $section2['image'];?>" alt="" /></a>
                     </div>
                 </div>
             </div>
