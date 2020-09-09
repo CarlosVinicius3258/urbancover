@@ -28,15 +28,4 @@
 				</ul>
 			</nav>
 
-		<!-- Banner -->
-		<?php $banner = get_field('banner');?>
 		
-			<section id="banner">
-				<div class="inner">
-					<header>
-						<h1><?php echo $banner['title'];?></h1>
-						<p><?php echo $banner['subtitle'];?></p>
-					</header>
-					<a href="<?php echo $banner['button_link'];?>" class="button big scrolly"><?php echo $banner['button_text'];?></a>
-				</div>
-			</section>
