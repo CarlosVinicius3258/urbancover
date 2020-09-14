@@ -6,7 +6,7 @@ Template Name: Generic
 <?php get_header();?>
 		<!-- Main -->
 			<div id="main">
-
+				<div class="subpage">
 				<!-- Section -->
 					<section class="wrapper">
 						<div class="inner">
@@ -63,7 +63,7 @@ Template Name: Generic
 							</div>
 						</div>
 					</section>
-
+					</div>
 			</div>
 
 <?php get_footer();?>

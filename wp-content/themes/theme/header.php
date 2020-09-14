@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Urban by TEMPLATED</title>
+		<title><?php the_title();?></title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<?php wp_head();?>
@@ -14,18 +14,19 @@
 	<body>
 
 		<!-- Header -->
-			<header id="header" class="alt">
-				<div class="logo"><a href="index.php">Urban <span>by TEMPLATED</span></a></div>
-				<a href="#menu">Menu</a>
-			</header>
+			<?php 
+				$args = array(
+					'theme_location' => 'primary',
+					'menu_class' => 'menu',
+					'container_class' => '',
+					'menu' => '',
+					'container' => 'menu',
+					'container_class' => '',
+					'container_id' => 'menu',
+					'menu_class' => '',
+					'menu_id' => 'menu'
+				);?>
+				<?php wp_nav_menu($args); ?>
 
-		<!-- Nav -->
-			<nav id="menu">
-				<ul class="links">
-					<li><a href="index.php">Home</a></li>
-					<li><a href="generic.php">Generic</a></li>
-					<li><a href="elements.php">Elements</a></li>
-				</ul>
-			</nav>
 
 		

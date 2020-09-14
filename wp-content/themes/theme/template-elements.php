@@ -8,6 +8,7 @@ Template Name: Elements
 
 		<!-- Main -->
 			<div id="main">
+			<div class = 'subpage'>
 				<section class="wrapper style1">
 					<div class="inner">
 
@@ -436,6 +437,7 @@ print 'It took ' + i + ' iterations to sort the deck.';
 						</div>
 					</div>
 				</section>
+			</div>
 			</div>
 
 		<?php get_footer();?>

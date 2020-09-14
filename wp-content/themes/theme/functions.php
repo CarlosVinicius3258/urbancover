@@ -30,3 +30,9 @@ function load_js(){
 }
 
 add_action('wp_enqueue_scripts', 'load_js');
+
+//menu
+register_nav_menus(array(
+    'primary' => __('Menu'),
+
+));
